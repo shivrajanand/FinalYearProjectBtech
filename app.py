@@ -2,20 +2,20 @@ import streamlit as st
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
 import pandas as pd
-
+import os
 # Streamlit page config
 st.set_page_config(page_title="Sanskrit–Hindi Translation", layout="wide")
 st.title("Sanskrit Translation with Finetuned NLLB Model")
 
 st.markdown("""
-# 📘 Sanskrit–Hindi Translation App
+# Sanskrit–Hindi Translation App
 
 Welcome! This app uses a fine-tuned **NLLB-200-Distilled-600M** model to translate Sanskrit sentences into Hindi.  
 The model has been specifically trained on a domain-specific parallel corpus and achieved a BLEU score of **11.33** and ChrF++ of **37.68** on the test set.
 
 ---
 
-### 💡 How to Use
+### How to Use
 
 - Enter a Sanskrit sentence in the input box below.
 - Or, select from the **provided sample sentences** for best results.
@@ -28,6 +28,25 @@ The model has been specifically trained on a domain-specific parallel corpus and
 # Model repo and token from secrets.toml
 model_name_or_path = "shivrajanand/NLLB-sn-to-hi-finetuned-augmented"
 token = st.secrets.get("HF_TOKEN")
+
+st.sidebar.markdown("### Developer Info")
+st.sidebar.markdown("""
+- **Name:** Shivraj Anand  
+- **Email:** shivrajanand022002@gmail.com 
+- **GitHub:** [github/shivrajanand](https://github.com/shivrajanand)
+- **Portfolio:** [shivrajanand](https://shivrajanand.github.io)
+- **Project Details:** 
+
+This is the final year project of B.Tech CSE branch (Batch 2021-25), submitted at B. P. Mandal College of Engineering, Madhepura. 
+
+The work has been carried out under the supervision of Prof. Sujeet Kumar.
+
+The app is experimental and showcases the best model obtained after 226 hours of rigorous training. It aims to demonstrate the practical application of advanced machine learning techniques learned during the course.
+
+For more details visit [BLOG Post](https://shivrajanand.github.io/blog_pages/FinalYearproject/finalyearproject.html) for a complete report.
+
+Note: This is a research-oriented project and may still have room for improvement and optimization.
+""")
 
 if not token:
     st.error("Hugging Face token not found. Please set HF_TOKEN in your Streamlit secrets.")
