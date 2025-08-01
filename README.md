@@ -56,4 +56,4 @@ academic use. It was manually compiled, and all rights are owned by IIT Kharagpu
 Due to confidentiality constraints, the dataset cannot be disclosed, as it has not yet been
 publicly released by the institute.
 - **Code**: [GitHub](https://github.com/shivrajanand/FinalYearProjectBtech)
-- **Blog Post**: [shivrajanand.github.io](https://shivrajanand.vercel.app/blog/nllbfinetunebtechmajor)
+- **Blog Post**: [blog/nllbfinetunebtechmajor](https://shivrajanand.vercel.app/blog/nllbfinetunebtechmajor)
