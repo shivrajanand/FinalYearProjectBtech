@@ -33,7 +33,7 @@ This app translates Sanskrit sentences into Hindi using a fine-tuned NLLB-200-Di
 - **Name**: Shivraj Anand
 - **Email**: shivrajanand022002@gmail.com
 - **GitHub**: [shivrajanand](https://github.com/shivrajanand)
-- **Portfolio**: [shivrajanand.vercel.app](https://shivrajanand.vercel.app)
+- **Portfolio**: [shivrajanand.com](https://shivrajanand.com)
 
 ### 📚 Project Details
 This is the final year B.Tech project (Batch 2021–25) from B. P. Mandal College of Engineering, Madhepura, under the guidance of **Prof. Sujeet Kumar**.
@@ -56,4 +56,4 @@ academic use. It was manually compiled, and all rights are owned by IIT Kharagpu
 Due to confidentiality constraints, the dataset cannot be disclosed, as it has not yet been
 publicly released by the institute.
 - **Code**: [GitHub](https://github.com/shivrajanand/FinalYearProjectBtech)
-- **Blog Post**: [blog/nllbfinetunebtechmajor](https://shivrajanand.vercel.app/blog/nllbfinetunebtechmajor)
+- **Blog Post**: [Finetuning NLLB-200-distilled-600M Model on Sanskrit-Hindi-Parallel-Corpus [B.Tech. Major Project]](https://shivrajanand.com/blog/nllbfinetunebtechmajor)
